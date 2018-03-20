@@ -1,0 +1,9 @@
+<view class="record-list {{ isself ? 'record-list_self' : '' }}">
+  <view class="record-list_user">
+	<image class='user-avatar' src="{{rdata.user.avatar}}"/>
+  </view>
+  <view class="record-list_ct">{{rdata.content}}</view>
+  <view wx:if="{{iserror}}" class="error-tip">
+	<icon type="warn" size="14" />
+  </view>
+</view>

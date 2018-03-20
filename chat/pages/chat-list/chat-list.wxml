@@ -1,0 +1,21 @@
+<wxs src="../../utils/util.wxs" module="util"></wxs>
+
+<view class='notice-msg'>
+	<view class='weui-cells weui-cells_after-title'>
+		<block wx:for="{{msgs}}" wx:for-item="msg" wx:key="{{user.time}}">
+			<navigator url="/pages/chat/single-chat/single-chat" class="weui-cell msg-list">
+				<view class="weui-cell__hd user-avatar_wrap">
+					<image class='user-avatar' src="{{msg.user.avatar}}"/>
+					<view wx:if="{{true}}" class='weui-badge weui-badge_filldot badge-top-right'></view>
+				</view>
+				<view class="weui-cell__bd">
+					<view>{{msg.user.nickname}}</view>
+					<view class='user-msg'>{{msg.content}}</view>
+				</view>
+				<view class="weui-cell__ft">
+					<view class='msg-time'>{{util.diffTime(msg.time)}}</view>
+				</view>
+			</navigator>
+		</block>
+	</view>
+</view>

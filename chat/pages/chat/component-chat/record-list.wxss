@@ -1,0 +1,57 @@
+.record-list{
+	position: relative;
+	display: flex;
+	padding: 10px 57px 10px 15px;
+}
+.record-list_self{
+	justify-content: flex-end;
+	padding: 10px 15px 10px 57px;
+}
+.record-list_user{
+	display: flex;
+	margin-right: 10px;
+}
+.record-list_self .record-list_user{
+	margin-right: 0;
+	margin-left: 10px;
+	order: 3;
+}
+.user-avatar{
+	width: 32px;
+	height: 32px;
+}
+.record-list_ct{
+	align-self: flex-start;
+	position: relative;
+	background: #ffffff;
+	padding: .2em .5em;
+	border-radius: .2em;
+	word-break: break-all;
+	word-wrap: break-word;
+	filter: drop-shadow(-1px 0px 5px rgba(0,0,0,.2));
+}
+.record-list_ct::before{
+	position: absolute;
+	content: "";
+	top: 10px;
+	left: -6px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;  
+	border-right: 8px solid #fff;
+}
+.record-list_self .record-list_ct{
+	order: 2;
+}
+.record-list_self .record-list_ct::before{
+	left: initial;
+	right: -6px;
+	border-right: none;
+	border-left: 8px solid #fff;
+}
+.error-tip{
+	align-self: flex-start;
+	padding: 0 .5em;
+}
+.record-list_self .error-tip{
+	order: 1;
+}

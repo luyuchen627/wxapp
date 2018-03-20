@@ -1,0 +1,25 @@
+.user-wrap{
+	padding: 20rpx 30rpx;
+	display: flex;
+	flex-flow: row wrap;
+}
+.user-list{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 80rpx;
+	margin: 0 30rpx 30rpx 0;
+	overflow: hidden;
+}
+.user-avatar{
+	display: inline-block;
+	width: 80rpx;
+	height: 80rpx;
+}
+.user-name{
+	margin-top: .5em;
+	text-align: center;
+	font-size: .7em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}

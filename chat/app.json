@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/chat-list/chat-list",
+		"pages/chat/chat-members/chat-members",
+		"pages/chat/single-chat/single-chat"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3366ba",
+    "navigationBarTitleText": "聊天",
+    "navigationBarTextStyle": "white"
+  }
+}

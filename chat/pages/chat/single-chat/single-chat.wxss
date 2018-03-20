@@ -1,0 +1,51 @@
+page{
+	background: #f5f5f5;
+}
+.time-label{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+.split-line{
+	position: relative;
+	color: #d4d4d4;
+}
+.split-line::before,.split-line::after{
+	position: absolute;
+	content: '';
+	top: .75em;
+	width: 6em;
+	height: 1px;
+	background: #d4d4d4;
+}
+.split-line::before{
+	left: -7em;
+}
+.split-line::after{
+	right: -7em;
+}
+.split-time{
+	padding: .1em .5em;
+	color: #fff;
+	border-radius: .2em;
+	background: #d4d4d4;
+}
+.reply{
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+.reply-ipt{
+	flex: 1;
+	height: 40px;
+	line-height: 40px;
+}
+.reply-btn{
+	margin-top: 0;
+	margin-left: 10px;
+}

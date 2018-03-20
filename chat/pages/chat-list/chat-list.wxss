@@ -1,0 +1,11 @@
+.weui-cell__bd{
+  width: 0;
+}
+.weui-cell__ft{
+  align-self: flex-start;
+}
+.msg-time{
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+}

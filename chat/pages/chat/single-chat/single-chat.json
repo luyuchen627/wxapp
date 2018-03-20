@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+	"record-list": "../component-chat/record-list"
+  },
+  "navigationBarTitleText": "聊天室"
+}

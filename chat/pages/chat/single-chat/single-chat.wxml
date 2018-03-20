@@ -1,0 +1,49 @@
+<wxs src="../../../utils/util.wxs" module="util"></wxs>
+<wxs module="time">
+	function isshowTime (records, index) {
+		if (records && index > 0) {
+			var time1 = records[index].time;
+			var time2 = records[index - 1].time;
+			return getDate(time1).getTime() - getDate(time2).getTime() > 1000 * 60 * 10
+		}
+	}
+	module.exports = {
+		isshowTime: isshowTime
+	}
+</wxs>
+
+<view class="page__bd chat-records">
+	<view class="time-label" wx:if="{{records.length}}">
+		<text class='split-line'>以下是最近的聊天记录</text>
+	</view>
+	<block
+		wx:for="{{records}}" 
+		wx:key="{{item.time}}">
+		<view wx:if="{{index == 0 || time.isshowTime(records, index)}}" class="time-label">
+			<text class='split-time'>{{util.diffTime(item.time)}}</text>
+		</view>
+		<record-list 
+			isself="{{item.user.nickname === userInfo.nickName}}"
+			iserror="{{false}}"
+			rdata="{{item}}"></record-list>
+	</block>
+	<form 
+		class="we-fixed_bottom"
+		report-submit=true
+		bindsubmit="onsubmit">
+		<view class="reply">
+			<input 
+				class="weui-input reply-ipt" 
+				type="text"
+				name="reply"
+				bindBlur="blur"
+				value="{{replyVal}}"
+				placeholder="请输入..." />
+			<button 
+				class="reply-btn" 
+				size="mini" 
+				type="primary"
+				formType="submit">发送</button>
+		</view>
+	</form>
+</view>

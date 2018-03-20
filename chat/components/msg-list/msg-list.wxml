@@ -1,0 +1,15 @@
+<navigator url="{{url}}" class="weui-cell weui-cell_access msg-list" hover-class="hover-active">
+	<view class="weui-cell__bd">
+		<view class='msg-title'>
+			<text>{{msg.title}}</text>
+		</view>
+		<view class='msg-extrainfo'>
+			<text class='msg-extrainfo-item'>请假类型：{{msg.type}}</text>
+			<text class='msg-extrainfo-item'>开始时间：{{msg.startTime}}</text>
+			<text class='msg-extrainfo-item'>结束时间：{{msg.endTime}}</text>
+			<text class='msg-extrainfo-item'>班级：{{msg.classes}}</text>
+			<text class='msg-extrainfo-item'>状态：{{msg.state}}</text>
+		</view>
+	</view>
+	<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>

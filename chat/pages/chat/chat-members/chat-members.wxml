@@ -1,0 +1,10 @@
+<view class="user-wrap">
+	<view 
+		class='user-list' 
+		wx:for="{{members}}" 
+		wx:if="{{item}}" 
+		wx:key="{{item.user_id}}">
+			<image class="user-avatar" src="{{item.avatarUrl}}"></image>
+			<view class="user-name">{{item.user_name}}</view>
+	</view>
+</view>
