@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3366ba",
+    "navigationBarTitleText": "wx-auth",
+    "navigationBarTextStyle": "white"
+  }
+}

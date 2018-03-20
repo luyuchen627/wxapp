@@ -1,0 +1,5 @@
+<import src="../assert/towxml/entry.wxml" />
+
+<view class='center'>
+	<template is="entry" data="{{...htmlDom}}"/>
+</view>

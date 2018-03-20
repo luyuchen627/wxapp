@@ -1,0 +1,12 @@
+page{
+	--theme-color: #3366ba;
+}
+page{
+	width: 100vmin;
+	height: 100vmax;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ebebeb;
+	font-size: 12px;
+}
