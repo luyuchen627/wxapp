@@ -1,0 +1,9 @@
+page{
+	--theme-color: #3366ba;
+}
+page{
+	text-align: center;
+	line-height: 100vh;
+	background-color: #ebebeb;
+	font-size: 16px;
+}
